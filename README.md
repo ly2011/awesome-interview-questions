@@ -126,9 +126,21 @@ function log(){
 };
 ```
 
-### 9. 编写一个b继承a的方法;
+### 9. javascript面向对象中继承实现
 
+javascript面向对象中的继承实现一般都使用到了构造函数和Prototype原型链，简单的代码如下：
 
+```javascript
+function Animal(name) {
+   this.name = name;
+}
+ 
+Animal.prototype.getName = function() {alert(this.name)}
+function Dog() {};
+Dog.prototype = new Animal("Buddy");
+Dog.prototype.constructor = Dog;
+var dog = new Dog();
+```
 
 ### 10. 请描述一下cookies，sessionStorage和localStorage的区别
 
@@ -201,6 +213,8 @@ var name = 'World!';
     }
 })();
 
+// 结果
+// Goodbye Jack
 ```
 
 ## HTTP 面试题
