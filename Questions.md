@@ -42,11 +42,17 @@
 
 ## JavaScript面试题
 
+
+
 ### 1. javascript的typeof返回哪些数据类型
 
 
 
+
+
 ### 2. call和apply的区别
+
+
 
 
 
@@ -87,10 +93,17 @@
 
 
 
-
-
 ### 9. javascript面向对象中继承实现
 
+```javascript
+function Animal(name) {
+   this.name = name;
+}
+
+
+Animal.prototype.getName = function() {alert(this.name)}
+function Dog() {};
+```
 
 
 
@@ -189,10 +202,3 @@ var name = 'World!';
 
 
 ### 3. 说说最近最流行的一些东西吧？常去哪些网站？
-
-
-
-
-
-
-
